@@ -44,7 +44,7 @@ public class RoleController {
 //        return "admin/role/role_list";
 //    }
 
-    @GetMapping("/toListPage")
+    @RequestMapping("/toListPage")
     public String toRoleListPage(){
         return "admin/role/role_list";
     }

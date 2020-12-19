@@ -41,7 +41,7 @@
 					<shiro:hasPermission name="user:list">
 						<dl class="layui-nav-child">
 							<dd>
-								<a href="javascript:;" style="padding-left: 40px;" data-url="/user/tolistPage">
+								<a href="javascript:;" style="padding-left: 40px;" data-url="${ctx}/user/toListPage">
 									<span class='iconfont icon-people'></span>&nbsp;&nbsp;用户管理</a>
 							</dd>
 						</dl>
@@ -49,7 +49,7 @@
 					<shiro:hasPermission name="role:list">
 						<dl class="layui-nav-child">
 							<dd>
-								<a href="javascript:;" style="padding-left: 40px;" data-url="/role/toListPage">
+								<a href="javascript:;" style="padding-left: 40px;" data-url="${ctx}/role/toListPage">
 									<span class='iconfont icon-group_fill'></span>&nbsp;&nbsp;角色管理</a>
 							</dd>
 						</dl>
@@ -57,7 +57,7 @@
 					<shiro:hasPermission name="menu:list">
 						<dl class="layui-nav-child">
 							<dd>
-								<a href="javascript:;" style="padding-left: 40px;" data-url="/menu/toMenuPage">
+								<a href="javascript:;" style="padding-left: 40px;" data-url="${ctx}/menu/toMenuPage">
 									<span class='iconfont icon-createtask'></span>&nbsp;&nbsp;菜单管理</a>
 							</dd>
 						</dl>

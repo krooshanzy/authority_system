@@ -40,7 +40,7 @@ public class UserController {
 
     // 向用户列表页面跳转
 //    @RequiresPermissions("user:list")
-    @RequestMapping("/tolistPage")
+    @RequestMapping("/toListPage")
     public String userList(){
         return "admin/user/user_list";
     }
