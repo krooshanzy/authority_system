@@ -39,7 +39,7 @@ public class UserController {
 //    }
 
     // 向用户列表页面跳转
-    @RequiresPermissions("user:list")
+//    @RequiresPermissions("user:list")
     @RequestMapping("/tolistPage")
     public String userList(){
         return "admin/user/user_list";
@@ -67,7 +67,7 @@ public class UserController {
 
     // 向用户添加页面跳转
     @RequestMapping("/toAddPage")
-    @RequiresPermissions("user:add")
+//    @RequiresPermissions("user:add")
     public String toAddPage(){
         return "admin/user/user_add";
     }
@@ -97,7 +97,7 @@ public class UserController {
 
     // 向修改页面跳转
     @RequestMapping("/toUpdatePage")
-    @RequiresPermissions("user:update")
+//    @RequiresPermissions("user:update")
     public String toUpdatePage(String id, HttpServletRequest request){
         User user = userService.getById(id);
         request.setAttribute("user",user);
@@ -116,7 +116,7 @@ public class UserController {
 
     // 用户删除
     @RequestMapping("/delete")
-    @RequiresPermissions("user:delete")
+//    @RequiresPermissions("user:delete")
     @ResponseBody
     public ResponseEntity deleteUser(@RequestBody List<User> users){
         try {

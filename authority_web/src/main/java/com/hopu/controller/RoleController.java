@@ -18,10 +18,7 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
 import org.springframework.util.StringUtils;
-import org.springframework.web.bind.annotation.RequestBody;
-import org.springframework.web.bind.annotation.RequestMapping;
-import org.springframework.web.bind.annotation.RequestParam;
-import org.springframework.web.bind.annotation.ResponseBody;
+import org.springframework.web.bind.annotation.*;
 
 import javax.servlet.http.HttpServletRequest;
 import java.util.ArrayList;
@@ -41,9 +38,14 @@ public class RoleController {
     private IUserRoleService userRoleService;
 
 
-    // 向角色列表页面跳转
-    @RequestMapping("/tolistPage")
-    public String roleList(){
+//    // 向角色列表页面跳转
+//    @RequestMapping("/tolistPage")
+//    public String roleList(){
+//        return "admin/role/role_list";
+//    }
+
+    @GetMapping("/toListPage")
+    public String toRoleListPage(){
         return "admin/role/role_list";
     }
 
